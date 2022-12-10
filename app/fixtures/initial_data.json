@@ -1,0 +1,180 @@
+[
+    {
+        "model": "app.player",
+        "pk": 1,
+        "fields": {
+            "name": "Neymar",
+            "initial_proce": 10.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 2,
+        "fields": {
+            "name": "Messi",
+            "initial_proce": 10.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 3,
+        "fields": {
+            "name": "Raphinha",
+            "initial_proce": 5.0
+        }
+    },
+    {
+        "model": "app.player",
+        "pk": 4,
+        "fields": {
+            "name": "Ronaldo",
+            "initial_proce": 20.0
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 1,
+        "fields": {
+            "name": "Brazil"
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 2,
+        "fields": {
+            "name": "Canadá"
+        }
+    },
+    {
+        "model": "app.team",
+        "pk": 3,
+        "fields": {
+            "name": "Mexico"
+        }
+    },
+    {
+        "model": "app.myteam",
+        "pk": 1,
+        "fields": {
+            "players": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "app.myteam",
+        "pk": 2,
+        "fields": {
+            "players": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "app.match",
+        "pk": 2,
+        "fields": {
+            "match_date": "2022-12-09T23:05:16Z",
+            "team_a": 1,
+            "team_a_goal": 2,
+            "team_b": 2,
+            "team_b_goal": 1
+        }
+    },
+    {
+        "model": "app.match",
+        "pk": 3,
+        "fields": {
+            "match_date": "2022-12-09T00:03:25Z",
+            "team_a": 2,
+            "team_a_goal": 0,
+            "team_b": 3,
+            "team_b_goal": 0
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 1,
+        "fields": {
+            "player": 1,
+            "team": 1,
+            "minutes": 10,
+            "match": 2,
+            "action": "goal"
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 2,
+        "fields": {
+            "player": 1,
+            "team": 1,
+            "minutes": 10,
+            "match": 2,
+            "action": "assist"
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 3,
+        "fields": {
+            "player": 3,
+            "team": 1,
+            "minutes": 1,
+            "match": 2,
+            "action": "goal"
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 4,
+        "fields": {
+            "player": 1,
+            "team": 1,
+            "minutes": 20,
+            "match": 2,
+            "action": "goal"
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 5,
+        "fields": {
+            "player": 2,
+            "team": 2,
+            "minutes": 1,
+            "match": 2,
+            "action": "yellow_card"
+        }
+    },
+    {
+        "model": "app.action",
+        "pk": 6,
+        "fields": {
+            "player": 4,
+            "team": 1,
+            "minutes": 1,
+            "match": 2,
+            "action": "goal"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$WdCWEWz0PSRmjWRrPyLJfg$w7QRog5A3rtrNDjYznYfRFCEjgEsKqixuWFw14DhcZM=",
+            "last_login": "2022-12-09T22:30:59.491Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@admin.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-12-09T22:30:45.752Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

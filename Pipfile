@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django = "4.1.4"
+django-environ = "*"
+dj-database-url = "*"
 
 [dev-packages]
 

@@ -1,10 +1,8 @@
 FROM python:3.10.2-slim
 
-RUN useradd -ms /bin/bash python
+RUN apt-get update && apt install make
 
 RUN pip install pipenv
-
-USER python
 
 WORKDIR /home/python/app
 

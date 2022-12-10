@@ -33,9 +33,11 @@ def get_old_match(sender, instance: Match, **kwargs):
 
 @receiver(post_save, sender=Match)
 def publish_new_match_result(sender, instance: Match, created: bool, **kwargs):
-    is_ocurred_new_goal = instance._pre_save_instance.team_a_goal != instance.team_a_goal or instance._pre_save_instance.team_b_goal != instance.team_b_goal
+    
+    is_team_a_make_goal = instance._pre_save_instance and instance._pre_save_instance.team_a_goal != instance.team_a_goal
+    is_team_b_make_a_goal = instance._pre_save_instance and instance._pre_save_instance.team_b_goal != instance.team_b_goal
 
-    if not created and is_ocurred_new_goal:
+    if not created and (is_team_a_make_goal or is_team_b_make_a_goal):
         print('Match goal updated', instance)
 
 ##### ACTION EVENTS #####
