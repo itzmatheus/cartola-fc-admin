@@ -15,6 +15,7 @@ class Team(models.Model):
     def __str__(self) -> str:
         return self.name
 
+# ONLY DECORATIVE MODEL
 class MyTeam(models.Model):
     players = models.ManyToManyField(Player)
 
